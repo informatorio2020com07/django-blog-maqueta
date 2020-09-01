@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django-blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo right">ImgPerfil</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nuevo_post.html">Crear</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                  </ul>
+                </div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuevo_post.html">Crear</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+            </ul>     
+        </header>
+
+        <div class="container">
+          <div class="row">
+
+              <div class="collection">
+
+                 <a href="#!" class="collection-item">Categoria</a>
+
+                 <a href="#!" class="collection-item">Categoria</a>
+                 <a href="#!" class="collection-item">Categoria</a>
+                 <a href="#!" class="collection-item">Categoria</a>
+              </div>
+
+
+
+          </div>
+        </div>
+
+
+    </body>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });
+    </script>
+</html>

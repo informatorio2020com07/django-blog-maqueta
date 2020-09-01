@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django-blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo right">ImgPerfil</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nuevo_post.html">Crear</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                  </ul>
+                </div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuevo_post.html">Crear</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+            </ul>     
+        </header>
+
+        <div class="container">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="post_title" type="text" class="validate">
+                  <label for="post_title">Titulo</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="post_content" class="materialize-textarea"></textarea>
+                  <label for="post_content">Contenido</label>
+                </div>
+              </div>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>Imagen</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+
+
+              <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                <button type="submit" class="btn-floating btn-large red">
+                  <i class="large material-icons">add</i>
+                </button>
+              </div>                          
+
+
+
+            </form>
+          </div>
+        </div>
+
+
+    </body>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });
+    </script>
+</html>
